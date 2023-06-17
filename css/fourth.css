@@ -1,0 +1,1199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Dosis",sans-serif;
+}
+.first-one{
+    background-color: #e8e7e7;  
+}
+.first-part{
+    background-color: #f0f2f4;
+    padding: 20px;
+}
+.first-part .contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: end;
+    margin: 0 5vw 0 0;
+}
+.first-part .contact .work a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #f18500 ;
+    margin: 0 5px;
+}
+.first-part .contact .work a:hover{
+    color: #000;
+}
+.first-part .contact .work a i{
+    font-size: 12px;
+    margin-left: 5px;
+}
+.first-part .contact .call a{
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #ff6900;
+    border-radius: 6px;
+    margin: 0 20px;
+}
+.first-part .contact .call a:hover{
+    background-color: #000;
+    color: #fff;
+}
+.first-part .contact .call a i{
+    font-size: 10px;
+    margin-left: 5px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav{
+  z-index: 99;
+  width: 100%;  
+  background-color: #f6f5f5;
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.18);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3%;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+nav .img img{
+    width: 100px;
+}
+nav .wrapper{
+  position: relative;
+  width: 60%;
+  height: fit-content;
+  line-height: 70px;
+}
+nav .call a{
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1.5px solid #000;
+    font-size: 14px;
+}
+nav .call a:hover{
+    background-color: #ff6900;
+    border: none;
+}
+nav .img .capital{
+    display: none;
+  }
+nav .phone{
+    display: none;
+}
+.wrapper .logo a{
+  color: #f2f2f2;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.wrapper .nav-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links li{
+  list-style: none;
+}
+.nav-links li a{
+  color: #525151;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+.nav-links li a:hover{
+    color: #f18500 ;
+}
+.nav-links .mobile-item{
+  display: none;
+}
+.nav-links .drop-menu{
+  position: absolute;
+  background: #f4f4f4;
+  width: 180px;
+  color: #000;
+  line-height: 45px;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 6px 10px rgba(226, 226, 226, 0.15);
+}
+.nav-links li:hover .drop-menu,
+.nav-links li:hover .mega-box{
+  transition: all 0.3s ease;
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+.drop-menu li{
+    text-align: center;
+}
+.drop-menu li a{
+  width: 100%;
+  display: block;
+  padding: 0 0 0 15px;
+  font-weight: 400;
+  border-radius: 0px;
+}
+.mega-box{
+  position: absolute;
+  left: 0;
+  width: 75vw;
+  padding: 0 30px;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+}
+.mega-box .content{
+  background: #f3f0f0;
+  padding: 25px 20px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+.mega-box .content .row{
+  width: 300px;
+  line-height: 45px;
+}
+.content .row header{
+    color: #f18500 ;
+  font-size: 21px;
+  font-weight: 800;
+}
+.content .row .mega-links{
+  margin-left: -40px;
+  border-left: 1px solid rgba(255,255,255,0.09);
+}
+.row .mega-links li{
+  padding: 0 20px;
+}
+.row .mega-links li a{
+  padding: 0px;
+  padding: 0 20px;
+  color: #000000;
+  font-size: 17px;
+  display: block;
+}
+.row .mega-links li a:hover{
+  color: #444343;
+  text-decoration: underline;
+}
+.wrapper .btn{
+  color: #f18500;
+  font-size: 17px;
+  cursor: pointer;
+  display: none;
+}
+.wrapper .btn.close-btn{
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+
+
+.first-one .first-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first-one .first-body .left{
+    padding: 3vw 6vw;
+    margin: 60px 0;
+    animation: moveToLeft 5s;
+}
+@keyframes moveToLeft {
+    0% {
+      transform: translateX(120px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes moveToRight {
+    0% {
+      transform: translateX(-120px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+ .first-one .request-contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ .first-one .request {
+    display: block;
+ }
+ .first-one .request .demo{
+    margin: auto;
+    background-color: rgb(17, 46, 57);
+    color: #fff;
+    width: fit-content;
+    padding: 30px;
+ }
+ .first-one .request .demo h1{
+    font-size: 40px;
+    color: #f18500;
+ }
+ .first-one .request .demo p{
+    font-size: auto;
+    margin: 15px 0;
+ }
+ .first-one .request .demo input {
+    background-color: transparent;
+    border: 1px solid #8d8d8d;
+    outline: none;
+    color: #fff;
+    padding: 20px 12px ;
+    margin: 10px 0;
+    font-size: 15px;
+    border-radius: 7px;
+    width: 30vw;
+    font-family: "poppins",sans-serif;
+}
+.first-one .request .demo select {
+    background-color: transparent;
+    border: 1px solid #8d8d8d;
+    outline: none;
+    color: #ffffff;
+    padding: 20px 12px ;
+    margin: 10px 0;
+    font-size: 15px;
+    border-radius: 7px;
+    width: 30vw;
+    font-family: "poppins",sans-serif;
+}
+.first-one .request .demo select option {
+    background-color: #fff;
+    border: 1px solid #8d8d8d;
+    outline: none;
+    color: #000;
+    font-family: "poppins",sans-serif;
+}
+.first-one .request .demo ::placeholder{
+    color: #fff;
+    font-family: "poppins",sans-serif;
+}
+.first-one .request .demo input:hover{
+    background-color: rgb(17, 52, 66);
+}
+.first-one .request .demo textarea {
+    background: transparent;
+    width: 30vw;
+    border-radius: 7px;
+    padding: 20px 12px ;
+    border: 1px solid #8d8d8d;
+    height: 20vh;
+    margin-top: 10px;
+    resize: none;
+    font-family: "poppins",sans-serif;
+    font-size: 15px;
+    color: #fff;
+}
+.first-one .request .demo form {
+    display: flex;
+    flex-direction: column;
+}
+.first-one .request .demo .holders h2{
+    font-size: 17px;
+    font-weight: 400;
+    color: #f18300;
+    margin-bottom: 10px;
+}
+.first-one .request .checks p{
+    display: flex;
+    align-items: center;
+}
+.first-one .request .checks h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.first-one .request .checks input{
+    margin: 5px 5px 5px 0;
+    height: 14px;
+    width: 14px;
+}
+.first-one .request .checks div a{
+    text-decoration: none;
+    color: #fff;
+}
+.first-one .request .checks div form button{
+    background-color: #f18500;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 13px 0;
+    border: none;
+    margin-top: 15px;
+    width: 25vw;
+    text-align: center;
+    border-radius: 3px;
+    color: #f0f2f4;
+}
+.first-one .request-contact .contacting{
+    display: block;
+    width: 40vw;
+}
+.first-one .request-contact .contacting h1{
+    font-size: 40px;
+    font-family: "poppins",sans-serif;
+}
+.first-one .request-contact .contacting h1 span{
+    font-size: 40px;
+    font-family: "poppins",sans-serif;
+    color: #f18300;
+}
+.first-one .request .contacting button i{
+    color: #f18300;
+    margin-right: 3px;
+}
+.first-one .request-contact .contacting button a{
+    text-decoration: none;
+    color: #000;
+}
+.first-one .request-contact .contacting button{
+    background-color: transparent;
+    border: none;
+    padding: 5px 20px;
+    font-size: 18px;
+}
+.first-one .request-contact .contacting .icns{
+    margin-top: 13px;
+}
+.first-one .request-contact .contacting .icns i{
+    color: #f18500;
+    font-size: 20px;
+}
+.first-one .request-contact .contacting .icns i:hover{
+    color: #000000;
+}
+.first-one .request-contact .contacting .text h2{
+    font-size: 30px;
+    font-family: "Poppins",sans-serif;
+    margin: 15px 0;
+}
+.first-one .request-contact .contacting .text h2 span{
+    font-size: 30px;
+    font-family: "Poppins",sans-serif;
+    color: #f18300;
+}
+.first-one .request-contact .contacting .text p{
+    font-style: italic;
+    font-family: "poppins",sans-serif;
+}
+.first-one .request-contact .contacting .text p span{
+    font-style: italic;
+    font-family: "poppins",sans-serif;
+    color: #f18300;
+}
+.first-one footer .foot{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 90px 0 40px 0;
+}
+.first-one footer .foot .one{
+    width: 240px;
+}
+.first-one footer .foot .one h3{
+    font-family: "Poppins",sans-serif;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.first-one footer .foot .one p{
+    margin: 6px 0;
+}
+.first-one footer .foot .one p a{
+    text-decoration: none;
+    color: #3A3B3C;
+}
+.first-one footer .foot .one p a:hover{
+    text-decoration: underline;
+}
+.first-one footer .foot .one .cw{
+    width: 120px;
+    color: #3A3B3C;
+}
+.first-one footer .foot .one img{
+    width: auto;
+    margin-top: 15px;
+}
+
+
+.first-one footer .images{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 7%;
+    padding: 10px 0 120px 0;
+    align-items: center;
+}
+.first-one footer .images img{
+    width: 15vw;
+}
+.first-one footer .last-part{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 0 0 80px 0;
+}
+.first-one footer .last-part .one{
+    width: 350px;
+}
+.first-one footer .last-part .one p{
+    font-size: 15px;
+}
+.first-one footer .last-part .one img{
+    width: 7vw;
+    margin-bottom: 10px;
+}
+.first-one footer .last-part .one a{
+    color: #f18300;
+    font-size: 24px;
+}
+.first-one footer .last-part .icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.first-one .mapouter{
+    margin-top: 50px;
+}
+.first-one .meet{
+    padding: 30px 60px;
+}
+.first-one .meet h1{
+    color: #f18500;
+    font-size: 35px;
+    font-family: "poppins",sans-serif;
+}
+.first-one .meet p{
+    font-family: "poppins",sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+}
+.first-one .meet p a{
+    text-decoration: none;
+    color: #f18300;
+}
+.first-one .meet p a:hover{
+    text-decoration: underline;
+    color: #f18300;
+}
+.first-one .meet p span{
+    font-family: "poppins",sans-serif;
+    font-size: 18px;
+    color: #f18300;
+    font-style: italic;
+}
+.first-one .side{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+.first-one  .right .dress{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 405px;
+    height: 450px;
+    transition: all 0.5s ease-in 0s;
+    display: inline-flex;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 2px rgba(91, 91, 91, 0.5);
+    border-radius: 15px;
+  }
+  .first-one  .right .dress .text h2{
+    font-family: "Poppins",sans-serif;
+    font-weight: bold;
+    color: #000;
+  }
+  .first-one  .right .dress .text p{
+    font-family: "Poppins",sans-serif;
+    font-weight: light;
+    color: #000;
+    font-size: 15px;
+  }
+  .first-one  .right .dress .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    padding: 20px;
+  }
+/* ONE */
+.first-one  .right .one{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-mara-1-1100x1277.jpg);
+  }
+.first-one .right .one:hover{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-mara-2-1100x1277.jpg);
+  }  
+  /* TWO */
+.first-one  .right .two{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-jeff-2-1100x1277.jpg);
+  }
+.first-one .right .two:hover{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-jeff-1-1100x1277.jpg);
+  }
+  /* THREE */
+.first-one  .right .three{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-britt-1-1100x1277.jpg);
+  }
+.first-one .right .three:hover{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-britt-2-1100x1277.jpg);
+  }
+/* FOUR */
+.first-one  .right .four{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-reinout-1-1100x1277.jpg);
+  }
+.first-one .right .four:hover{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-reinout-2-1100x1277.jpg);
+  }
+  /* FIVE */
+.first-one  .right .five{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-rosa-1-1100x1277.jpg);
+  }
+.first-one .right .five:hover{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-rosa-2-1100x1277.jpg);
+  }
+  /* SIX */
+.first-one  .right .six{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-sven-1-1100x1277.jpg);
+  }
+.first-one .right .six:hover{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-sven-2-1100x1277.jpg);
+  }
+  /* SEVEN */
+.first-one  .right .seven{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-maiko-1-1100x1277.jpg);
+  }
+.first-one .right .seven:hover{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-maiko-2-1100x1277.jpg);
+  }
+  /* EIGHT */
+.first-one  .right .eight{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-lorenzo-1-1100x1277.jpg);
+  }
+.first-one .right .eight:hover{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-lorenzo-2-1100x1277.jpg);
+  }
+  /* NINE */
+.first-one  .right .nine{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-wessel-1-1100x1277.jpg);
+  }
+.first-one .right .nine:hover{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-wessel-2-1100x1277.jpg);
+  }
+  /* TEN */
+.first-one  .right .ten{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2022/12/over-isa-1-1100x1277.jpg);
+  }
+.first-one .right .ten:hover{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2022/12/over-isa-2-1100x1277.jpg);
+  }
+/* ELEVEN */
+.first-one  .right .eleven{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2023/03/over-ramon-2-1100x1277.jpg);
+  }
+.first-one .right .eleven:hover{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2023/03/over-ramon-1-1100x1277.jpg);
+  }
+  /* ELEVEN */
+.first-one  .right .twelve{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2023/03/over-sarah-2-1100x1277.jpg);
+  }
+.first-one .right .twelve:hover{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2023/03/over-sarah-1-1100x1277.jpg);
+  }
+/* ELEVEN */
+.first-one  .right .thirteen{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2023/01/over-melvin-2-1100x1277.jpg);
+  }
+.first-one .right .thirteen:hover{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2023/01/over-melvin-1-1100x1277.jpg);
+  }
+  /* ELEVEN */
+.first-one  .right .fourteen{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2023/02/over-amber-2-1100x1277.jpg);
+  }
+.first-one .right .fourteen:hover{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2023/02/over-amber-1-1100x1277.jpg);
+  }
+  /* ELEVEN */
+.first-one  .right .fifteen{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/10/over-inge-2.jpg);
+  }
+.first-one .right .fifteen:hover{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/10/over-inge-1.jpg);
+  }
+  /* ELEVEN */
+.first-one  .right .sixteen{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-natalie-2-1100x1277.jpg);
+  }
+.first-one .right .sixteen:hover{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-natalie-1-1100x1277.jpg);
+  }
+  /* ELEVEN */
+.first-one  .right .seventeen{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-rinus-2-1100x1277.jpg);
+  }
+.first-one .right .seventeen:hover{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-rinus-1-1100x1277.jpg);
+  }
+  /* ELEVEN */
+.first-one  .right .eighteen{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2022/12/over-sem-2-1100x1277.jpg);
+  }
+.first-one .right .eighteen:hover{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2022/12/over-sem-1-1100x1277.jpg);
+  }
+  /* ELEVEN */
+.first-one  .right .ninteen{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-jesper-2-1100x1277.jpg);
+  }
+.first-one .right .ninteen:hover{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-jesper-1-1100x1277.jpg);
+  }
+  /* ELEVEN */
+.first-one  .right .twenty{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-sander-2-1100x1277.jpg);
+  }
+.first-one .right .twenty:hover{
+    background-image:url(https://d2ftqzf4nsbvwq.cloudfront.net/wp-content/uploads/www.woeler.nl/2021/08/over-sander-1-1100x1277.jpg);
+  }
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    nav{
+        box-shadow: 0px 2.5px 2.5px rgba(0,0,0,0.18);
+    }
+  
+    .first-part{
+    display: none;
+  }  
+  nav .call{
+    display: none;
+  }
+  nav .phone{
+    display: contents;
+  }
+  nav .phone a i{
+    font-size: 18.5px;
+    color: #f18500 
+  }
+  nav .wrapper .btn{
+    display: block;
+  }
+  nav .img .small{
+    display: none;
+  }
+  nav .img img{
+    width: 40px;
+  }
+  nav .mega-box .content{
+    background-color: transparent;
+  }
+  nav .wrapper{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    line-height: 70px;
+  }
+  .wrapper .nav-links{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 350px;
+    top: 0;
+    left: -100%;
+    background: #f5f6f7;
+    display: block;
+    line-height: 50px;
+    overflow-y: auto;
+    box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
+    transition: all 0.3s ease;
+  }
+  /* custom scroll bar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #242526;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3A3B3C;
+  }
+  #menu-btn:checked ~ .nav-links{
+    left: 0%;
+  }
+  #menu-btn:checked ~ .btn.menu-btn{
+    display: none;
+  }
+  #close-btn:checked ~ .btn.menu-btn{
+    display: block;
+  }
+  .nav-links li{
+    margin: 15px 10px;
+  }
+  .nav-links li a{
+    padding: 0 20px;
+    display: block;
+    font-size: 16px;
+  }
+  .nav-links .drop-menu{
+    position: static;
+    opacity: 1;
+    top: 65px;
+    visibility: visible;
+    padding-left: 20px;
+    width: 100%;
+    max-height: 0px;
+    overflow: hidden;
+    box-shadow: none;
+    transition: all 0.3s ease;
+  }
+  #showDrop:checked ~ .drop-menu,
+  #showMega:checked ~ .mega-box{
+    max-height: 100%;
+  }
+  .nav-links .desktop-item{
+    display: none;
+  }
+  .nav-links .tablet{
+    margin-top: 70px;
+  }
+  .nav-links .mobile-item{
+    display: block;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .nav-links .mobile-item:hover{
+    background: transparent;
+  }
+  .drop-menu li{
+    margin: 0;
+  }
+  .drop-menu li a{
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  .mega-box{
+    position: static;
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+    padding: 0 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .mega-box .content{
+    box-shadow: none;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+  }
+  .mega-box .content .row{
+    width: 100%;
+    margin-bottom: 15px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .mega-box .content .row:nth-child(1),
+  .mega-box .content .row:nth-child(2){
+    border-top: 0px;
+  }
+  .content .row .mega-links{
+    border-left: 0px;
+    padding-left: 15px;
+  }
+  .row .mega-links li{
+    margin: 0;
+  }
+  .content .row header{
+    font-size: 17px;
+  }
+
+ .first-one .request{
+    background-color: rgb(17, 46, 57);
+    color: #fff;
+    padding: 70px 0;
+    display: flex;
+ }
+ .first-one .request .demo{
+    margin: 0 0 0 30px;
+ }
+ .first-one .request .demo h1,span{
+    font-size: 20px;
+    width: fit-content;
+ }
+ .first-one .request .demo input {
+    background-color: transparent;
+    border: 1px solid #8d8d8d;
+    outline: none;
+    color: #fff;
+    padding: 15px 12px ;
+    margin: 10px 0;
+    font-size: 13px;
+    border-radius: 7px;
+    width: 37vw;
+    font-family: "poppins",sans-serif;
+}
+.first-one .request .demo select {
+    background-color: transparent;
+    border: 1px solid #8d8d8d;
+    outline: none;
+    color: #ffffff;
+    padding: 10px 12px ;
+    margin: 10px 0;
+    font-size: 13px;
+    border-radius: 7px;
+    width: 67vw;
+    font-family: "poppins",sans-serif;
+}
+.first-one .request .demo select option {
+    background-color: #fff;
+    border: 1px solid #8d8d8d;
+    outline: none;
+    color: #000;
+    font-family: "poppins",sans-serif;
+}
+.first-one .request .demo ::placeholder{
+    color: #fff;
+    font-family: "poppins",sans-serif;
+}
+.first-one .request .demo input:hover{
+    background-color: rgb(17, 52, 66);
+}
+.first-one .request .demo textarea {
+    background: transparent;
+    width: 37vw;
+    border-radius: 7px;
+    padding: 20px 12px ;
+    border: 1px solid #8d8d8d;
+    height: 20vh;
+    margin-top: 10px;
+    resize: none;
+    font-family: "poppins",sans-serif;
+    font-size: 15px;
+    color: #fff;
+}
+
+.first-one .request .demo form {
+    display: flex;
+    flex-direction: column;
+}
+.first-one .request .checks p{
+    display: flex;
+    align-items: center;
+}
+.first-one .request .checks h3{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.first-one .request .checks input{
+    margin: 5px 5px 5px 0;
+    height: 10px;
+    width: 10px;
+}
+.first-one .request .checks div a{
+    text-decoration: none;
+    color: #fff;
+}
+.first-one .request .checks div form button{
+    background-color: #f18500;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 13px 0;
+    border: none;
+    margin-top: 15px;
+    width: 25vw;
+    text-align: center;
+    border-radius: 3px;
+    color: #f0f2f4;
+}
+.first-one footer .foot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px 20px;
+    gap: 30px;
+}
+.first-one footer .foot .one{
+    width: 200px;
+}
+.first-one footer .foot .one h3{
+    font-family: "Poppins",sans-serif;
+    font-size: 15.5px;
+    margin-bottom: 10px;
+}
+.first-one footer .foot .one p{
+    margin: 6px 0;
+    font-size: 12.5px;
+}
+.first-one footer .foot .one p a{
+    text-decoration: none;
+    color: #3A3B3C;
+}
+.first-one footer .foot .one p a:hover{
+    text-decoration: underline;
+}
+.first-one footer .foot .one .cw{
+    width: 120px;
+    color: #3A3B3C;
+}
+.first-one footer .foot .one img{
+    width: 120px;
+    margin-top: 10px;
+}
+
+.first-one footer .images{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 7%;
+    padding: 10px 0 40px 0;
+    align-items: center;
+}
+
+.first-one footer .last-part{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 0 0 30px 0;
+}
+.first-one footer .last-part .one{
+    width: 350px;
+}
+.first-one footer .last-part .one p{
+    font-size: 12px;
+}
+.first-one footer .last-part .one img{
+    width: 16vw;
+    margin-bottom: 10px;
+}
+.first-one footer .last-part .one a{
+    color: #f18300;
+    font-size: 16px;
+}
+.first-one footer .last-part .icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.first-one .request-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ .first-one .request-contact .contacting{
+    display: block;
+    width: fit-content;
+    margin: 20px 3% ;
+}
+.first-one .request-contact .contacting h1,h1 span{
+    font-size: 20px;
+}
+.first-one .request-contact .contacting h1 span{
+    font-size: 20px;
+}
+.first-one .request-contact .contacting button{
+    font-size: 14px;
+}
+.first-one .request-contact .contacting .icns i{
+    color: #f18500;
+    font-size: 13px;
+}
+.first-one .request-contact .contacting .text h2{
+    font-size: 17px;
+}
+.first-one .request-contact .contacting .text h2 span{
+    font-size: 17px;
+}
+.first-one .request-contact .contacting .text p{
+    font-size: 13px;
+}
+.first-one .request-contact .contacting .text p span{
+    font-size: 13px;
+}
+.first-one  .right .dress{
+    width: 205px;
+    height: 250px;
+  }
+  .first-one  .right .dress .text h2{
+    font-size: 14px;
+  }
+  .first-one  .right .dress .text p{
+    font-size: 12px;
+  }
+  .first-one  .right .dress .text{   
+    padding: 10px;
+  }
+}
+nav input{
+  display: none;
+}
+
+@media screen and (max-width: 601px){
+    .first-one .request{
+        display: flex;
+        flex-direction: column-reverse;
+     }
+     .first-one .request .demo{
+        margin: 0 5%;
+        background-color: rgb(17, 46, 57);
+        color: #fff;
+     }
+     .first-one .request .demo h1,span{
+        font-size: 35px;
+        width: 70%;
+     }
+     .first-one .request .demo input {
+        background-color: transparent;
+        border: 1px solid #8d8d8d;
+        outline: none;
+        color: #fff;
+        padding: 11px 12px ;
+        margin: 10px 0;
+        font-size: 11px;
+        border-radius: 7px;
+        width: 100%;
+        font-family: "poppins",sans-serif;
+    }
+    .first-one .request .demo textarea {
+        background: transparent;
+        width: 100%;
+        padding: 15px 12px ;
+        font-size: 12px;
+    }
+    .first-one .request .demo form {
+        display: flex;
+        flex-direction: column;
+    }
+    .first-one .request .checks p{
+        display: flex;
+        align-items: center;
+    }
+    .first-one .request .checks h3{
+        font-size: 17px;
+        margin: 15px 0;
+    }
+    .first-one .request .checks input{
+        margin: 5px 5px 5px 0;
+        height: 15px;
+        width: 15px;
+    }
+    .first-one .request .checks div a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .first-one .request .checks div form button{
+        background-color: #f18500;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 13px 0;
+        border: none;
+        margin-top: 15px;
+        width: 45vw;
+        text-align: center;
+        border-radius: 3px;
+        color: #f0f2f4;
+    }
+    .first-one .request .image img{
+        width: 90vw;
+    }
+    .first-one .teams .text h1,span{
+        font-size: 20px;
+    }
+    .first-one .teams .text{
+        width: 40%;
+    }
+    .first-one .teams .text span{
+        color: #f18500;
+    }
+    .first-one .teams .text p{
+        font-size: 17px;
+    }
+    .first-one .teams .text button{
+        width: 14px;
+        margin: 15px 0;
+        width: 18vw;
+    }
+    .content1 p{
+        font-size: 14.5px;
+        width: 100%;
+      }
+      .wrapper1 nav{
+        width: 60%;
+    }
+    .first-one .wrapper1 button{
+        margin: auto;
+        margin: 30px auto 20px auto;
+        display: flex;
+        justify-content: center;
+        width: 24vw;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        background-color: #f18500; 
+    }
+    .first-one .inbox .new{
+        width: 50%;
+    }
+    .first-one .inbox .new h2{
+        font-size: 18px;
+        color: #fff;
+        font-family: "Poppins",sans-serif;
+    }
+    .first-one .inbox .email form {
+        display: flex;
+        flex-direction: column;
+        justify-content: safe;
+        width: 40vw;
+    }
+    .first-one .inbox .email input {
+        padding: 13px 15px;
+        font-size: 15px;
+    }
+    .first-one .inbox .email button{
+        margin-top: 10px;
+        width: 50%;
+        background: #000;
+        color: #fff;
+        padding: 15px 0;
+        font-size: 13px;
+    }
+}
